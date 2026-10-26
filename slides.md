@@ -1,16 +1,30 @@
 ---
 theme: default
-title: 'Metropolis: Yalnızlığın Geometrisi'
+title: 'Metropolis IX : Architecture of Isolation'
 info: 'Mekânın bölünmesi, kent yaşamı ve özyineleme üzerine 10 dakikalık konuşma.'
 lang: tr
 colorSchema: dark
 duration: 10min
 transition: fade
-layout: blank
+layout: default
 ---
 
+<div class="cover-slide">
+  <div class="cover-text">
+    <div class="slide-kicker">GENERATIVE ARCHITECTURE · RECURSIVE URBANISM</div>
+    <h1 class="cover-title">
+      Metropolis IX <span class="cover-colon">:</span><br/>
+      <span class="cover-subtitle">Architecture of Isolation</span>
+    </h1>
+    <div class="cover-divider"></div>
+  </div>
+  <div class="cover-artwork-wrap">
+    <img src="/metropolis2000px.png" alt="Metropolis IX" class="cover-artwork" />
+  </div>
+</div>
+
 <!--
-Kapak için ayrılan slayt. Kapağı buraya ekleyebilirsiniz.
+Kapak için ayrılan slayt.
 Süre: 0:00–0:15. Başlığı ve kendinizi tanıtın, ardından ikinci slayta geçin.
 -->
 
@@ -252,3 +266,40 @@ Metropolis bu sorulara kesin bir yanıt vermek yerine, kente yeniden bakabilece�
 
 Mekânları daha küçük mekânlara böleriz. Onları sahiplenir, sınırları içinde kendi yalnızlığımızı yaşarız. Ve yan yana gelen bu sayısız tekil dünyaya... Metropolis deriz. Teşekkür ederim.
 -->
+
+---
+layout: default
+---
+
+<div class="outro-slide">
+  <div class="outro-info">
+    <div class="slide-kicker">COMPUTATIONAL ARTIST</div>
+    <h1 class="outro-name">Murat Atimtay</h1>
+    <div class="cover-divider" style="margin-bottom: 28px;"></div>
+    <div class="outro-links">
+      <a href="http://atimtay.xyz" target="_blank" class="outro-link-row">
+        <span class="outro-label">WEB</span>
+        <span class="outro-val">atimtay.xyz</span>
+      </a>
+      <a href="https://www.atimtay.xyz/about" target="_blank" class="outro-link-row">
+        <span class="outro-label">ABOUT</span>
+        <span class="outro-val">atimtay.xyz/about</span>
+      </a>
+      <a href="https://instagram.com/atimtay.xyz" target="_blank" class="outro-link-row">
+        <span class="outro-label">INSTAGRAM</span>
+        <span class="outro-val">@atimtay.xyz</span>
+      </a>
+      <a href="https://x.com/atimtay" target="_blank" class="outro-link-row">
+        <span class="outro-label">TWITTER / X</span>
+        <span class="outro-val">@atimtay</span>
+      </a>
+    </div>
+  </div>
+  <div class="outro-qr-wrap">
+    <div class="outro-qr-card">
+      <img src="/qr-about.svg" alt="QR Code - https://www.atimtay.xyz/about" class="outro-qr-img" />
+      <div class="outro-qr-caption">atimtay.xyz/about</div>
+    </div>
+  </div>
+</div>
+
