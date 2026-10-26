@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg-obsidian: #0d0e10;
+  --text-ivory: #f2ede4;
+  --text-muted: #9d9991;
+  --gold-accent: #e5bc82;
+  --gold-dim: rgba(229, 188, 130, 0.25);
+  --coral-accent: #d95d39;
+}
+
+.slidev-layout {
+  background: radial-gradient(circle at 82% 18%, #181a1f 0%, #0d0e10 70%);
+  color: var(--text-ivory);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 42px 58px !important;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle architectural grid lines in background */
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(229, 188, 130, 0.09);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slide-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 42px;
+  align-items: center;
+  height: 100%;
+}
+
+.slide-grid.wide-visual {
+  grid-template-columns: 1fr 1fr;
+}
+
+.slide-kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-accent);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.85;
+}
+
+.slide-kicker::after {
+  content: '';
+  height: 1px;
+  width: 36px;
+  background: var(--gold-dim);
+}
+
+.slidev-layout h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 38px !important;
+  line-height: 1.12 !important;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #faf6f0;
+  margin: 0 0 22px 0 !important;
+}
+
+.slidev-layout p {
+  font-size: 17.5px;
+  line-height: 1.58;
+  color: #dcd7ce;
+  font-weight: 300;
+  margin: 0 0 14px 0;
+}
+
+.slidev-layout strong {
+  color: var(--gold-accent);
+  font-weight: 500;
+}
+
+.question {
+  border-left: 2px solid var(--gold-accent);
+  padding: 10px 0 10px 18px;
+  margin-top: 20px;
+  color: #f6e7cf;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.35;
+  background: linear-gradient(90deg, rgba(229, 188, 130, 0.07) 0%, transparent 100%);
+}
+
+.code-pill {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: rgba(10, 11, 13, 0.78);
+  border: 1px solid rgba(229, 188, 130, 0.2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #c9c4bc;
+}
+
+.code-pill .kw {
+  color: #e5bc82;
+}
+
+.code-pill .cm {
+  color: #77746e;
+}
+
+.feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.feature-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  padding: 4px 9px;
+  border: 1px solid rgba(229, 188, 130, 0.25);
+  color: #d8d2c7;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.feature-tag span {
+  color: var(--gold-accent);
+}
+
+/* Interactive division box for Slide 1 */
+.division-stage {
+  position: relative;
+  width: 310px;
+  height: 360px;
+  border: 1.5px solid var(--gold-accent);
+  background: rgba(229, 188, 130, 0.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+}
+
+.division-stage .cut-v1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 64%;
+  border-left: 1.5px solid var(--gold-accent);
+}
+
+.division-stage .cut-h1 {
+  position: absolute;
+  left: 0;
+  right: 36%;
+  top: 42%;
+  border-top: 1.5px solid rgba(229, 188, 130, 0.8);
+}
+
+.division-stage .cut-9 {
+  position: absolute;
+  left: 18%;
+  top: 56%;
+  width: 34%;
+  height: 28%;
+  border: 1.5px solid #ff5e3a;
+  background: rgba(255, 94, 58, 0.12);
+}
+
+.division-stage .coord-label {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold-accent);
+  opacity: 0.75;
+}
+
+.slidev-layout blockquote {
+  margin: 22px 0 0;
+  padding: 14px 22px;
+  border-left: 2px solid var(--gold-accent);
+  background: linear-gradient(90deg, rgba(229, 188, 130, 0.09) 0%, transparent 100%);
+  color: #f7ebd9;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 23px;
+  line-height: 1.48;
+  font-style: italic;
+}
